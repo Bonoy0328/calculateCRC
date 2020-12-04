@@ -2,7 +2,7 @@ const static unsigned char polyValue = 0x07; //CRC-8/ITU固定参数
 const static unsigned char initValue = 0x00; //CRC-8/ITU固定参数，crc校验值的初始值
 const static unsigned char checkValue = 0x55; //CRC-8固定参数,最后结果与此值进行异或后再输出
 /********计算单个字节的CRC校验**********/
-/********输入参数位CRC-8多项式，固定为0x07*********/
+/********输入参数为8bits的数据*********/
 unsigned char calculateSingleByteCRC(unsigned char data)
 {
     unsigned char singleCrc;
